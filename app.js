@@ -13,7 +13,7 @@ var users = require('./routes/users');
 var mongoose = require('mongoose');
 
 //Connect to MongoDB...
-mongoose.connect(MONGO_URI);
+mongoose.connect(config.MONGO_URI);
 
 var app = express();
 //assign the swig view engine to .html files
