@@ -13,7 +13,7 @@ var users = require('./routes/users');
 var mongoose = require('mongoose');
 
 //Connect to MongoDB...
-mongoose.connect('mongodb://juliecoding:' + config.mLabPass + '@ds011258.mlab.com:11258/mongo-standups');
+mongoose.connect(MONGO_URI);
 
 var app = express();
 //assign the swig view engine to .html files
